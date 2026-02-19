@@ -21,7 +21,7 @@ def run_adb_reboot():
     """Connect to Firestick via ADB, trigger reboot, then disconnect."""
     commands = [
         ["adb", "connect", ADB_TARGET],
-        ["adb", "shell", "setprop", "sys.powerctl", "reboot"],
+        ["adb", "-s", ADB_TARGET, "shell", "setprop", "sys.powerctl", "reboot"],
         ["adb", "disconnect", ADB_TARGET],
     ]
     for cmd in commands:
