@@ -1,3 +1,5 @@
+> **⚠️ ARCHIVED REPO** — Stock FireOS does not persist trusted ADB addresses. The project works but requires rooting the device to work around this limitation.
+
 # network-firestick-rebooter
 
 Minimal Flask HTTP server to reboot an Amazon Firestick via ADB, triggered from an iOS Shortcut over VPN.
